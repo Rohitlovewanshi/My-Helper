@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:id="@+id/smsPermissionExpand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Grant Sms permission"
+                android:textSize="17sp"
+                android:id="@+id/smsPermissionText"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/smsPermissionImage"
+                android:layout_toEndOf="@+id/smsPermissionText"
+                android:layout_marginStart="65dp"
+                android:src="@drawable/ic_expand_less_black_24dp"
+                android:contentDescription="expand"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/smsPermissionDone"
+                android:layout_toEndOf="@+id/smsPermissionImage"
+                android:src="@drawable/ic_check_circle_black_24dp"
+                android:layout_marginStart="15dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/smsPermissionDescription"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/smsPermissionTextDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click to allow sms permission."
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/smsPermissionButton"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="55dp"
+                android:background="@drawable/oval"
+                android:layout_toEndOf="@+id/smsPermissionTextDescription"
+                android:text="setup"
+                android:textColor="#FFFFFF"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contactPermissionExpand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Grant Contact permission"
+                android:textSize="17sp"
+                android:id="@+id/contactPermissionText"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactPermissionImage"
+                android:layout_toEndOf="@+id/contactPermissionText"
+                android:layout_marginStart="40dp"
+                android:src="@drawable/ic_expand_less_black_24dp"
+                android:contentDescription="expand"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactPermissionDone"
+                android:layout_toEndOf="@+id/contactPermissionImage"
+                android:src="@drawable/ic_check_circle_black_24dp"
+                android:layout_marginStart="15dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contactPermissionDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click to allow contact permission"
+                android:textSize="12sp"
+                android:id="@+id/contactPermissionTextDescription"/>
+
+            <Button
+                android:id="@+id/contactPermissionButton"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/oval"
+                android:layout_toEndOf="@+id/contactPermissionTextDescription"
+                android:text="setup"
+                android:layout_marginStart="40dp"
+                android:textColor="#FFFFFF"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/locationPermissionExpand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Grant Location permission"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:id="@+id/locationPermissionText"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/locationPermissionImage"
+                android:layout_toEndOf="@+id/locationPermissionText"
+                android:layout_marginStart="35dp"
+                android:src="@drawable/ic_expand_less_black_24dp"
+                android:contentDescription="expand"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/locationPermissionDone"
+                android:layout_toEndOf="@+id/locationPermissionImage"
+                android:src="@drawable/ic_check_circle_black_24dp"
+                android:layout_marginStart="15dp"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/locationPermissionDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click to allow location permission"
+                android:textSize="12sp"
+                android:id="@+id/locationPermissionTextDescription"/>
+
+            <Button
+                android:id="@+id/locationPermissionButton"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/oval"
+                android:layout_toEndOf="@+id/locationPermissionTextDescription"
+                android:text="setup"
+                android:layout_marginStart="35dp"
+                android:textColor="#FFFFFF"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/adminPermissionExpand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Grant Admin permission"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:id="@+id/adminPermissionText"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminPermissionImage"
+                android:layout_toEndOf="@+id/adminPermissionText"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/ic_expand_less_black_24dp"
+                android:contentDescription="expand"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminPermissionDone"
+                android:layout_toEndOf="@+id/adminPermissionImage"
+                android:src="@drawable/ic_check_circle_black_24dp"
+                android:layout_marginStart="15dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/adminPermissionDescription"
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click to allow admin permission."
+                android:textSize="12sp"
+                android:id="@+id/adminPermissionTextDescription"/>
+
+            <Button
+                android:id="@+id/adminPermissionButton"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/oval"
+                android:layout_toEndOf="@+id/adminPermissionTextDescription"
+                android:text="setup"
+                android:layout_marginStart="42dp"
+                android:textColor="#FFFFFF"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/autorestartPermissionExpand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Grant Auto-start permission"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:id="@+id/autorestartPermissionText"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/autorestartPermissionImage"
+                android:layout_toEndOf="@+id/autorestartPermissionText"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_expand_less_black_24dp"
+                android:contentDescription="expand"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/autorestartPermissionDone"
+                android:layout_toEndOf="@+id/autorestartPermissionImage"
+                android:src="@drawable/ic_check_circle_black_24dp"
+                android:layout_marginStart="15dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/autorestartPermissionDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click to allow auto-start permission."
+                android:textSize="12sp"
+                android:id="@+id/autorestartPermissionTextDescription"/>
+
+            <Button
+                android:id="@+id/autorestartPermissionButton"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/oval"
+                android:layout_toEndOf="@+id/autorestartPermissionTextDescription"
+                android:text="setup"
+                android:layout_marginStart="20dp"
+                android:textColor="#FFFFFF"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/oval"
+            android:layout_gravity="center"
+            android:text="CONTINUE"
+            android:padding="15dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:textColor="#FFFFFF"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

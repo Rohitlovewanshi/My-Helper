@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <PreferenceCategory android:title="General Settings">
+
+                <Preference
+                    android:icon="@drawable/ic_account_circle_black_24dp"
+                    android:title="Change Name"
+                    android:key="changeName"/>
+
+                <Preference
+                    android:icon="@drawable/ic_security_black_24dp"
+                    android:title="Change login password"
+                    android:key="changeLoginPassword" />
+
+                <Preference
+                    android:icon="@drawable/ic_lock_key_black_24dp"
+                    android:title="Change lock pin"
+                    android:key="changeLockPin" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory android:title="Privacy Settings">
+
+                <SwitchPreference
+                    android:icon="@drawable/ic_contacts_black_24dp"
+                    android:defaultValue="true"
+                    android:key="access_contact"
+                    android:summary="Get contact number from your mobile through Sms"
+                    android:title="Contacts" />
+
+                <SwitchPreference
+                    android:icon="@drawable/ic_location_on_black_24dp"
+                    android:key="access_location"
+                    android:title="Location"
+                    android:summary="Get Location of your mobile through Sms"
+                    android:defaultValue="true"/>
+
+                <SwitchPreference
+                    android:icon="@drawable/ic_phonelink_ring_black_24dp"
+                    android:key="access_profile"
+                    android:title="Ring Profile"
+                    android:summary="Change profile of your mobile through Sms"
+                    android:defaultValue="true"/>
+
+                <SwitchPreference
+                    android:icon="@drawable/ic_access_alarm_black_24dp"
+                    android:key="access_alarm"
+                    android:title="Alarm"
+                    android:summary="Alarm your mobile through Sms"
+                    android:defaultValue="true"/>
+
+                <SwitchPreference
+                    android:icon="@drawable/ic_screen_lock_portrait_black_24dp"
+                    android:key="access_lock"
+                    android:title="Lock mobile screen"
+                    android:summary="Lock your mobile through Sms"
+                    android:defaultValue="true"/>
+
+        </PreferenceCategory>
+
+</PreferenceScreen>

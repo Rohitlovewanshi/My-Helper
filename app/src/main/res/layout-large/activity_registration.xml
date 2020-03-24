@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/app_name"/>
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/edittext_oval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:inputType="text"
+            android:textSize="20dp"
+            android:hint="Enter full name"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp" />
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_oval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:textSize="20dp"
+            android:inputType="textEmailAddress"
+            android:hint="Enter email"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp" />
+
+        <EditText
+            android:id="@+id/input_password"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_oval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:textSize="20dp"
+            android:inputType="textPassword"
+            android:hint="Create login password"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp" />
+
+        <EditText
+            android:id="@+id/input_confirm_password"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_oval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:textSize="20dp"
+            android:inputType="textPassword"
+            android:hint="Confirm login password"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp" />
+
+        <EditText
+            android:id="@+id/input_pin_lock"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_oval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:textSize="20dp"
+            android:inputType="numberPassword"
+            android:hint="Create 4 digit pin lock"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="24dp"
+            android:padding="18dp"
+            android:text="Sign up"
+            android:textSize="17sp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/oval" />
+
+        <TextView
+            android:id="@+id/link_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Already have an account? \n Sign in. "
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#4169E1"/>
+
+    </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</ScrollView>

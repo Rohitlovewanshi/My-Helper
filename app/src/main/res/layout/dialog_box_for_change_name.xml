@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:text="Change Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_name"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Name"
+        android:inputType="text"
+        android:layout_below="@+id/title"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/buttonChange"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:background="#1E90FF"
+        android:text="Change"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/edit_name"
+        android:layout_alignParentEnd="true" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/buttonCancel"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="CANCEL"
+        android:textColor="#FFFFFF"
+        android:background="#1E90FF"
+        android:layout_below="@+id/edit_name"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

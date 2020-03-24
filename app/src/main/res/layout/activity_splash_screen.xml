@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="40dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_height="170dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Logo"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_text"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Powered by the Students of \n Jaypee University of Guna"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>

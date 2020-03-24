@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlockedContactsListViewActivity"
+    android:background="@color/azure">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listViewMessages"
+        android:layout_marginTop="10dp"
+        android:divider="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:dividerHeight="0.5dp">
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/no_contacts_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Contacts"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -10,5 +10,6 @@ And many more.
 
 
 Screenshots : 
-
-![login_page](https://user-images.githubusercontent.com/38532316/84911871-660f7380-b0d6-11ea-9946-e4f3f9deb534.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/38532316/84911871-660f7380-b0d6-11ea-9946-e4f3f9deb534.png" width="300" height="500">
+ </p>

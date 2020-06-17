@@ -19,4 +19,4 @@ login page                            |   registration page
 
 Home page                            |   Navigation page
 :-----------------------------------: | :----------------------------------:
-<img src="https://user-images.githubusercontent.com/38532316/84913191-e1bdf000-b0d7-11ea-8ba7-fc98e877064b.png" width="300" height="500"> | <img src="https://user-images.githubusercontent.com/38532316/84913214-ea162b00-b0d7-11ea-9413-3af5b9cc967d.png" width="300" height="500"> 
+<img src="https://user-images.githubusercontent.com/38532316/84913191-e1bdf000-b0d7-11ea-8ba7-fc98e877064b.png" width="300" height="500"> | <img src="https://user-images.githubusercontent.com/38532316/84915811-e932c880-b0da-11ea-8007-a50d56952511.png" width="300" height="500"> 

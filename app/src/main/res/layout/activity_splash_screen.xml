@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Powered by the Students of \n Jaypee University of Guna"
+        android:text="Powered by the Students of \n Jaypee University of Guna MP"
         android:textSize="15sp"
         android:gravity="center"
         android:layout_marginBottom="20dp"/>
